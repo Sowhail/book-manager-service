@@ -6,7 +6,7 @@ This is a mini project about book management, users can signUp, signIn, create b
 - ### gorm (golang ORM)
 - ### A simple layer architecture (DataAccess - Logic - Presentation)
 # How to try it
-After cloning the project, do not forget to download the packages of the project by the command below in the directory of the project
+After cloning the project, do not forget to download the packages by the command below in the directory of the project
 ```go
 // terminal
 go mod tidy
