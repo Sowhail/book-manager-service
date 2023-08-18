@@ -11,7 +11,7 @@ After cloning the project, do not forget to download the packages by the command
 // terminal
 go mod tidy
 ```
-Remember to customize the config.go according to the database you would like to connect to
+Remember to customize the config.go according to the database you prefer to connect to
  ## Sign Up
  
  ```go
