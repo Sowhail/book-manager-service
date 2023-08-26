@@ -48,6 +48,6 @@ func main() {
 	router.Handle(http.MethodGet, "/api/v1/books/:id", serverManager.GetBook)
 	router.Handle(http.MethodPatch, "/api/v1/books/:id", serverManager.UpdateBook)
 	router.Handle(http.MethodDelete, "/api/v1/books/:id", serverManager.DeleteBook)
-	log.Fatal(router.Run("localhost:3001"))
+	log.Fatal(router.Run("0.0.0.0:3001"))
 
 }

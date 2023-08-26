@@ -2,6 +2,7 @@ package logic
 
 import (
 	"bookManagement/db"
+	"crypto/rand"
 	"errors"
 	"time"
 
@@ -20,11 +21,11 @@ type claims struct {
 }
 
 func generateRandomKey() ([]byte, error) {
-	// jwtKey := make([]byte, 32)
-	jwtKey := []byte{74, 230, 12, 205, 34, 107, 180, 161, 170, 121, 8, 191, 71, 155, 180, 39, 169, 196, 85, 135, 196, 68, 232, 31, 10, 2, 190, 222, 47, 89, 144, 54}
-	// if _, err := rand.Read(jwtKey); err != nil {
-	// 	return nil, err
-	// }
+	jwtKey := make([]byte, 32)
+	// jwtKey := []byte{74, 230, 12, 205, 34, 107, 180, 161, 170, 121, 8, 191, 71, 155, 180, 39, 169, 196, 85, 135, 196, 68, 232, 31, 10, 2, 190, 222, 47, 89, 144, 54}
+	if _, err := rand.Read(jwtKey); err != nil {
+		return nil, err
+	}
 	return jwtKey, nil
 }
 
