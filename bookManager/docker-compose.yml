@@ -9,10 +9,6 @@ services:
       - .env
     networks:
       - book_manager_net
-    volumes:
-      - type: bind
-        source: .
-        target: /bookManager
     depends_on:
       - db
     restart: on-failure
