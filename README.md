@@ -5,13 +5,16 @@ This is a mini project about book management, users can signUp, signIn, create b
 - ### jwt  (user authentication)
 - ### gorm (golang ORM)
 - ### A simple layer architecture (DataAccess - Logic - Presentation)
+- ### Docker
 # How to try it
-After cloning the project, do not forget to download the packages by the command below in the directory of the project
+You need to have docker and docker compose plugin instlled in your system.
+then just open a terminal in the bookManager folder of the project and type the commands below.
 ```go
 // terminal
-go mod tidy
+$ docker compose build
+$ docker compose up
 ```
-Remember to customize the config.go according to the database you prefer to connect to
+Try all the apis in localhost:3001
  ## Sign Up
  
  ```go
